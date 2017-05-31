@@ -41,6 +41,17 @@
   border-radius: 50%;
 }
 
+.scoreboard-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.row-number {
+  font-size: 60px;
+  margin: 0 20px;
+}
+
 span {
   position: relative;
   bottom: 5px;
