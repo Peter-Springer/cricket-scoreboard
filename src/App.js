@@ -29,7 +29,7 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1>React Cricket Scoreboard</h1>
+          <h1>React-Cricket-Scoreboard</h1>
         </div>
         <h3>Click a Space Invader to mark a hit!</h3>
         <div className='scoreboard-container'>
