@@ -20,7 +20,7 @@ class ScoreboardBlock extends Component {
     if (this.state.count === 0) {
       return (
         <div onClick={() => this.updateCount()} className='hit-container'>
-          <span></span>
+          <span>👾</span>
         </div>
       )
     } else if  (this.state.count === 1) {

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .App-logo {
@@ -18,8 +19,26 @@
   font-size: large;
 }
 
+h1 {
+  font-size: 50px;
+  color: #51a7be;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.scoreboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
 .closed-container {
-  color: #27768b;
+  color: #51a7be;
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 63px;
   font-weight: bold;
@@ -27,11 +46,12 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 5px solid #27768b;
+  border: 5px solid #51a7be;
+  margin-top: 30px;
 }
 
 .hit-container {
-  color: #27768b;
+  color: #51a7be;
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 60px;
   font-weight: bolder;
@@ -39,6 +59,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  margin-top: 38px;
 }
 
 .scoreboard-row {
@@ -49,7 +70,7 @@
 
 .row-number {
   font-size: 60px;
-  margin: 0 20px;
+  margin: 30px 10px 0 10px;
 }
 
 span {

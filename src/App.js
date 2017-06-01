@@ -5,37 +5,39 @@ import './App.css';
 import Scoreboard from './Scoreboard';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      rows: [20, 19, 18, 17, 16, 15, 'Bull']
+    }
+  }
+
+  buildBoards() {
+    return this.state.rows.map(e => (
+      <div key={e} className='scoreboard-row'>
+          <Scoreboard/>
+        <div>
+          <p className='row-number'>{e}</p>
+        </div>
+          <Scoreboard/>
+      </div>
+    ))
+  }
 
   render() {
     return (
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Cricket Scoreboard</h2>
+          <h1>React Cricket Scoreboard</h1>
         </div>
-        <div className='scoreboard-row'>
-            <Scoreboard/>
-          <div>
-            <p className='row-number'>15</p>
-          </div>
-            <Scoreboard/>
+        <h3>Click a Space Invader to mark a hit!</h3>
+        <div className='scoreboard-container'>
+          {this.buildBoards()}
         </div>
       </div>
-    );
+    )
   }
 }
 
 export default App;
-
-// this.state = {
-//   rows: Array.from({ length: 13 }).map((e, i) => i + 1).reverse
-// }
-// buildBoards() {
-//   return this.state.rows.map(e => (
-//         <Scoreboard/>
-//           <div>
-//             <p className='row-number'>e</p>
-//           </div>
-//   ))
-// }
-// const ROW_NUMBER = 13;
