@@ -41,8 +41,8 @@ class App extends Component {
           {this.buildBoards()}
         </div>
         <div className='points-container'>
-        <textarea placeholder='Points'/>
-        <textarea placeholder='Points'/>
+          <textarea placeholder='Points'/>
+          <textarea placeholder='Points'/>
         </div>
       </div>
     )
