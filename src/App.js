@@ -32,6 +32,11 @@ class App extends Component {
           <h1>React-Cricket-Scoreboard</h1>
         </div>
         <h3>Click a Space Invader to mark a hit!</h3>
+        <div className='players-container'>
+          <input className='player-one' placeholder='player 1'/>
+          <p>VS</p>
+          <input className='player-two' placeholder='player 2'/>
+        </div>
         <div className='scoreboard-container'>
           {this.buildBoards()}
         </div>

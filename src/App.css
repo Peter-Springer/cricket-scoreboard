@@ -72,6 +72,25 @@ h3 {
   margin: 30px 10px 0 10px;
 }
 
+.players-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.players-container input {
+  font-size: 25px;
+  text-align: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.players-container p {
+  font-size: 25px;
+}
+
 span {
   position: relative;
   bottom: 5px;
