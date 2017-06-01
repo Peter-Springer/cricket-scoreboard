@@ -40,6 +40,10 @@ class App extends Component {
         <div className='scoreboard-container'>
           {this.buildBoards()}
         </div>
+        <div className='points-container'>
+        <textarea placeholder='Points'/>
+        <textarea placeholder='Points'/>
+        </div>
       </div>
     )
   }
